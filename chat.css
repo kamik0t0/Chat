@@ -1,0 +1,235 @@
+body {
+    background-color: #18213a;
+}
+
+/* Шрифт */
+* {
+    font-family: -apple-system, Open Sans, sans-serif;
+}
+/* Общий стиль кнопок */
+.button {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    width: 74px;
+    background-color: #2a334f;
+    border-radius: 1px;
+    border: 1px solid #192138;
+    color: snow;
+    position: absolute;
+    cursor: pointer;
+}
+
+.button:focus {
+    outline: none;
+    border: 1px solid #192138;
+    background-color: #565c7e;
+}
+
+.button:hover {
+    outline: none;
+    border: 1px solid #192138;
+    background-color: #565c7e;
+}
+
+#exit {
+    width: 74px;
+    left: 45px;
+    visibility: hidden;
+}
+
+#start {
+    width: 74px;
+    left: 45px;
+}
+
+#refresh {
+    width: 100px;
+    left: 450px;
+    top: 84px;
+}
+
+/* информационные divs */
+.infoDiv {
+    line-height: 21px;
+    border: 2px solid #243053;
+    background-color: #0d1220;
+    position: absolute;
+    color: snow;
+}
+
+/* Стилизация полосы прокрутки */
+*::-webkit-scrollbar {
+    background-color: #0d1220;
+    width: 6px;
+}
+
+*:hover:-webkit-scrollbar {
+    background-color: #0d1220;
+    width: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #0d121f;
+    border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #343c54;
+    border-radius: 3px;
+}
+
+/*___________________________ Стилизация чата _____________________ */
+#chat {
+    width: 320px;
+    height: 500px;
+    top: 130px;
+    display: flex;
+}
+
+/* Контейнер-div для отображение введенных сообщений */
+.messages {
+    height: 420px;
+    margin: 10px;
+    position: absolute;
+    font-size: 14px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Класс для html form */
+.formConteiner {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/*____________________ Стилизация поля ввода сообщенй ________________*/
+
+/* поле для ввода сообщений */
+.input {
+    width: 284px;
+    height: 22px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #171d2f;
+    border-radius: 3px;
+    border: 1px solid #0d121f;
+    color: snow;
+    font-size: 14px;
+    resize: none;
+    position: relative;
+}
+
+.input:focus {
+    outline: none;
+    background-color: black;
+    border: 1px solid #243053;
+}
+
+/*_______________________________ Стилизация регистрации ____________________*/
+
+/* Общий контейнер */
+.login {
+    position: absolute;
+    left: 81px;
+}
+
+/* Стилизация поля ввода ника */
+.nick {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #171d2f;
+    border-radius: 3px;
+    border: 1px solid #192138;
+    color: snow;
+    font-size: 14px;
+    height: 14px;
+}
+
+/* Стилизация поля ввода ника при фокусировке*/
+.nick:focus {
+    outline: none;
+    background-color: black;
+    border: 1px solid #243053;
+}
+
+.topName {
+    width: 164px;
+    top: 24px;
+    visibility: hidden;
+    color: #5981bc;
+    height: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+}
+
+/* _____________________________ Стилизация сообщений*/
+
+/* Стилизация контейнера сообщения */
+.msgConteinerInChat {
+    width: 300px;
+    word-wrap: break-word;
+    display: block;
+}
+
+/* Стилизация логина отправителя */
+.userNameInChat {
+    color: #6797d9;
+    display: inline;
+    white-space: nowrap;
+}
+
+/* Стилизация текста сообщения */
+.msgInChat {
+    display: inline;
+    box-sizing: border-box;
+}
+
+.highlight {
+    color: #d9af3b;
+}
+
+/* _________________________Стилизация окна пользователей______________ */
+.userListName {
+    font-size: 14px;
+    color: snow;
+    position: absolute;
+    left: 400px;
+    width: 200px;
+    top: 116px;
+}
+
+#users {
+    height: 30px;
+    width: 250px;
+    top: 166px;
+    left: 370px;
+    border-radius: 15px;
+}
+
+.nickInList {
+    width: 235px;
+    color: #6797d9;
+    cursor: pointer;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 7px;
+    margin-bottom: 1px;
+    word-wrap: break-word;
+    display: block;
+}
+
+.loginFly {
+    transform: translate(297px, 141px);
+    transition: transform 500ms;
+    position: absolute;
+    width: fit-content;
+    height: 20px;
+    line-height: 21px;
+    font-size: 16px;
+    color: #5981bc;
+    font-weight: normal;
+}

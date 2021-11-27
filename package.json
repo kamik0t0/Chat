@@ -1,0 +1,19 @@
+{
+    "name": "ws-chat",
+    "version": "1.0.0",
+    "description": "",
+    "main": "front-chat.js",
+    "scripts": {
+        "start": "back-chat.cjs",
+        "dev": "nodemon back-chat.cjs"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.12"
+    },
+    "dependencies": {
+        "ws": "^8.2.1"
+    }
+}

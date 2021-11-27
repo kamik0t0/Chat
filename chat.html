@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chat</title>
+        <link rel="stylesheet" href="chat.css" />
+    </head>
+    <body>
+        <div id="chat" class="infoDiv">
+            <div id="messages" class="messages"></div>
+            <div id="formConteiner" class="formConteiner">
+                <form name="publish" id="form" class="form">
+                    <textarea
+                        name="message"
+                        id="input"
+                        class="input"
+                        placeholder="Написать сообщение..."
+                        tabindex="3"
+                    ></textarea>
+                </form>
+            </div>
+        </div>
+
+        <div id="login" class="login">
+            <br />
+            <input
+                id="nick"
+                class="nick"
+                type="text"
+                placeholder="Введи свой ник..."
+                tabindex="1"
+            />
+            <br /><br />
+            <input
+                type="button"
+                value="Старт"
+                id="start"
+                class="button"
+                tabindex="2"
+            />
+            <input
+                type="button"
+                value="Выход"
+                id="exit"
+                class="button"
+                tabindex="2"
+            />
+            <div id="topName" class="topName"></div>
+        </div>
+        <input
+            type="button"
+            value="Обновить"
+            id="refresh"
+            class="button"
+            tabindex="4"
+        />
+        <div class="userListName"><h3>Список пользователей</h3></div>
+        <div id="users" class="infoDiv"></div>
+        <script src="front-chat.js"></script>
+    </body>
+</html>
